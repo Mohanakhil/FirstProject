@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction()
+        {
+            document.getElementById("demo2").innerHTML="new para";
+        }
+    </script>
+</head>
+<body>
+    <p id="demo"> this content will change</p>
+    <button type="button" onclick='document.getElementById("demo").innerHTML="I am new guy here"'>Click
+        </button>
+
+        <p id="demo2">Old paragraph</p>
+        <button type="button" onclick="myFunction()">Change it now</button>
+
+        <p id="demo3">This para will change now</p>
+        <button type="button" onclick="demo()">Click here</button>
+        <script>
+            function demo()
+            {
+                document.getElementById('demo3').innerHTML="new demo3";
+            }
+        </script>
+        <p id="add"></p>
+        <script>
+            let x=2,y=3,z;
+            z=x+y;
+            document.getElementById('add').innerHTML="the value of Z is"+z;
+        </script>
+        <p id="demo4"></p>
+        <script>
+             const cars=["a","b","c"];
+             cars.push("d");
+             document.getElementById("demo4").innerHTML=cars;
+        </script>
+        </body>
+        </html>
